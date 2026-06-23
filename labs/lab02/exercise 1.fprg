@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise 1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-23 03:38:26 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yMzswMzoxMjoyMSBQTTsyNzQ1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yMzswMzozODoyNiBQTTsxOzI4NjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="amountRinggit" type="Integer" array="False" size=""/>
+            <declare name="amountbaht" type="Integer" array="False" size=""/>
+            <declare name="ExchangeRate" type="Real" array="False" size=""/>
+            <input variable="amountRinggit"/>
+            <input variable="ExchangeRate"/>
+            <assign variable="amountbaht" expression="(amountRinggit*(1-0.02))*ExchangeRate"/>
+            <output expression="amountbaht" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
