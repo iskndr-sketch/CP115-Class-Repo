@@ -4,18 +4,18 @@
         <attribute name="name" value="lab-03-3"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-06-30 03:29:15 PM"/>
+        <attribute name="saved" value="2026-06-30 03:41:55 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMzowMzozNSBQTTsyNzQ4"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMzoyOToxNSBQTTszOzI4NjQ="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0zMDswMzo0MTo1NSBQTTs0OzI4NjM="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="kilobyte" type="Integer" array="False" size=""/>
-            <declare name="megabyte" type="Integer" array="False" size=""/>
-            <declare name="gigabyte" type="Integer" array="False" size=""/>
-            <declare name="terabyte" type="Integer" array="False" size=""/>
-            <declare name="petabyte" type="Integer" array="False" size=""/>
+            <declare name="kilobyte" type="Real" array="False" size=""/>
+            <declare name="megabyte" type="Real" array="False" size=""/>
+            <declare name="gigabyte" type="Real" array="False" size=""/>
+            <declare name="terabyte" type="Real" array="False" size=""/>
+            <declare name="petabyte" type="Real" array="False" size=""/>
             <input variable="kilobyte"/>
             <assign variable="megabyte" expression="kilobyte/1024"/>
             <assign variable="gigabyte" expression="megabyte/1024"/>
