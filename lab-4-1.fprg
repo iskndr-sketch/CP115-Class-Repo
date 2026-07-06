@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-4-1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-06 09:33:55 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNjswOToyMTo0NyBBTTsyNzQ2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wNjswOTozMzo1NSBBTTsxOzI4NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kwh" type="Real" array="False" size=""/>
+            <input variable="kwh"/>
+            <declare name="utility" type="Real" array="False" size=""/>
+            <declare name="extrakwh" type="Integer" array="False" size=""/>
+            <if expression="kwh &lt;= 100">
+                <then>
+                    <assign variable="utility" expression="0.30"/>
+                </then>
+                <else>
+                    <if expression="kwh &gt; 200">
+                        <then>
+                            <assign variable="utility" expression="0.75"/>
+                            <assign variable="extrakwh" expression="kwh-200"/>
+                        </then>
+                        <else>
+                            <assign variable="utility" expression="0.50"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
