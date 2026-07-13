@@ -1,10 +1,9 @@
 income = float(input())
 if income <= 50000:
-    tax = 0
+    totalTax = 0
 else:
-    if income <= 100000:
-        tax = 0.01
+    if income >= 100000:
+        totalTax = (income - 100000) * 0.02 + (50000 * 0.01)
     else:
-        tax = 0.02
-totaltax = income * tax
-print(toatalTax)
+        totalTax = (income - 50000) * 0.01
+print(totalTax)
