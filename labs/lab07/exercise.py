@@ -1,21 +1,16 @@
-# Test assignment operators
-score = 100
-print(f"Starting score: {score}")
+# BMI classification - use if-elif-else chain
+weight = 60  # kg  
+height = 1.75  # meters
+bmi = weight / (height * height)
 
-score += 10     # Add 10
-print(f"After += 10: {score}")
+print(f"BMI: {bmi:.1f}")
 
-score -= 5      # Subtract 5
-print(f"After -= 5: {score}")
-
-score *= 2      # Multiply by 2
-print(f"After *= 2: {score}")
-
-score //= 3     # Floor division by 3
-print(f"After //= 3: {score}")
-
-score %= 15     # Modulus by 15
-print(f"After %= 15: {score}")
-
-score **= 2     # Square it
-print(f"After **= 2: {score}")
+# Only one classification should apply
+if bmi >= 30:
+    print("BMI Category: Obese")
+elif bmi >= 25:
+    print("BMI Category: Overweight")  
+elif bmi >= 18.5:
+    print("BMI Category: Normal weight")
+else:
+    print("BMI Category: Underweight")
